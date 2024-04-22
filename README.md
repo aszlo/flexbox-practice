@@ -1,2 +1,2 @@
-# Lesrning Flexbox
+# Learning Flexbox
 ## Alura Practice
