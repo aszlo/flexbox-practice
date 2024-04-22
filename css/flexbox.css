@@ -1,0 +1,196 @@
+/* Header */
+
+.cabecera__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+}
+
+.cabecera__buscar__item{
+    display: none;
+}
+
+/* Menu superior horizontal */
+
+.superior__seccion__container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+    overflow: auto;
+    color: red;
+}   
+
+/* Barra de menu lateral */
+
+.menu__container{   
+    position:fixed;
+    bottom: 0%;
+    height: 75px;
+    width: 100%;
+    color:deeppink;
+    flex-direction:row;
+}
+
+/* .menu__lista{
+    display: flex;
+    /* justify-content: space-around; */
+    /* height: 100%;
+*/
+
+
+.menu__lista:nth-child(2),
+
+.menu__lista:nth-child(3),
+
+.menu__lista:nth-child(4){
+    display: none; 
+}
+
+
+.menu__lista{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+
+.menu__lista li{
+    align-self: center;
+}
+
+
+
+/* Seccion Videos */
+
+.videos__container{
+    display: flex;
+    flex-wrap:  wrap;
+    gap: 15px;
+}
+
+.videos__item{
+    height: 300px;
+    width: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:flex-start
+}
+
+.descripcion-video{
+    display: flex;
+    height: auto;
+   
+}
+
+
+
+
+/* Footer */
+
+.rodapie__container{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+
+/* Breackpoints */
+
+
+@media (min-width: 834px){
+    .menu__container{
+        position: fixed;
+        top: 10%;
+        height: 100%;
+        width:74px;
+    }
+
+    
+    .menu__lista{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 45px;
+    }
+}
+
+
+
+@media (min-width: 1440px){
+    .menu__container{
+        top: 10%;
+        height: 100%;
+        width: 240px;
+        overflow: scroll;
+    }
+
+    .menu__lista:nth-child(2),
+    .menu__lista:nth-child(3),
+    .menu__lista:nth-child(4){
+    display: flex; 
+    }
+
+    .menu__lista{
+        /* display: flex; */
+        height: auto;
+        justify-content: flex-start;
+        padding: 20px 17px; 
+        gap: 20px;
+    }
+
+    .menu__lista:nth-child(3){
+        flex-direction: column-reverse;
+    }
+
+    .menu__itens{
+        display: flex;
+        gap: 15px;
+     }
+
+    /* Cuarta lista menu lateral */
+     .videojuegos{
+        order: 3;
+     }
+     .peliculas{
+        order: 2;
+     }
+     .premium{
+        order: 1;
+     }
+
+   
+
+
+}
+
+
+
+@media (min-width: 830px) {
+
+    .cabecera__buscar__item{
+        display: block;
+    }
+
+    /* Aun cuando borro esta linea no hay cambio en la pagina web*/
+    .rodapie__container{
+        justify-content: space-between;
+    }
+    .menu__lista{
+        align-items: center;
+
+        /* Lineas que no funcionaron para acomodar los iconos */
+
+       /* justify-content: center; pone los iconos al centro del contenedor */
+       /* justify-content: flex-start */
+       /* align-items: center; */
+       /* flex-direction: column; */
+    }   
+    /* .menu__container{
+        align-content: center;
+    } */
+
+
+
+}
